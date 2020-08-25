@@ -15,3 +15,9 @@ up:
 
 down:
 	docker-compose down
+
+run-server:
+	cd server && npm install && npm run db:seed && npm start
+
+run-client:
+	cd client && npm install && npm start
