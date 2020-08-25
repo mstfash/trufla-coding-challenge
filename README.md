@@ -23,7 +23,10 @@ Thats it!, you are good to go.
 2- `cd trufla-coding-challenge` <br />
 3- `touch client/.env.production.local` <br />
 4- `nano client/.env.production.local` add this env variable `REACT_APP_SERVER_URL=http://localhost:3030` <br />
-3- `make init`<br />
+5- `make init`<br />
 
 Runs the app in docker containers.<br />
 Open [http://localhost](http://localhost) to view it in the browser.
+
+To take the containers down <br />
+run `make down`
