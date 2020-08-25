@@ -7,15 +7,17 @@ Trufla root project.
 - `docker-compose.yaml` to launch the whole project into containers
 - `makefile` is just a helper to run terminal commands
 
-### Getting started
+## Development
 
-if we want to launch dockerized version of the app we need to do the following.
+1- `git clone https://github.com/heavenchains/trufla-coding-challenge.git` <br />
+2- `cd trufla-coding-challenge` <br />
+3- `touch server/.env` <br />
+4- `nano server/.env` add this env variable `MONGODB_URI=mongodb://localhost:27017/trufla` <br />
+5- `touch client/.env.production.local` <br />
+6- `nano client/.env.production.local` add this env variable `REACT_APP_SERVER_URL=http://localhost:3030` <br />
 
-We need to have `.env.production.local` file inside of `client` folder with the following env variable <br />
-
-`REACT_APP_SERVER_URL=http://localhost:3030`<br />
-
-Thats it!, you are good to go.
+Then go to server folder and run `npm install && npm start`<br />
+and then go to client folder and run `npm install && npm start`
 
 ## Deployment
 
