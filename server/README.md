@@ -11,7 +11,7 @@ Coding challenge by Trufla - node js server that is based on express, MongoDB an
 
 ### .env Sample
 
-`PORT=3030`
+`PORT=3030` <br />
 `MONGODB_URI=mongodb://localhost:27017/trufla`
 
 ### Available Scripts
