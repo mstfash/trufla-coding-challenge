@@ -9,7 +9,7 @@ import errorMiddleware from './utils/error-middleware';
 
 const mongoConnector = new MongoConnector();
 
-async function startServer({ port = process.env.PORT } = {}) {
+async function startServer({ port = process.env.PORT || '3030' } = {}) {
   await mongoConnector.connect();
   const app = express();
   app.use(cors());
