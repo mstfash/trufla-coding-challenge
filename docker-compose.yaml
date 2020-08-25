@@ -1,0 +1,44 @@
+version: '3'
+services:
+  trufla-server:
+    container_name: trufla-server
+    restart: always
+    build:
+      context: ./server/.
+      dockerfile: Dockerfile
+    environment:
+      MONGODB_URI: mongodb://mongodb:27017/trufla
+    ports:
+      - '3030:3030'
+    networks:
+      - main-prod
+    depends_on:
+      - mongodb
+
+  trufla-frontend:
+    container_name: trufla-frontend
+    restart: always
+    build:
+      context: ./client/.
+      dockerfile: Dockerfile
+    ports:
+      - '80:80'
+    networks:
+      - main-prod
+
+  mongodb:
+    image: mongo:4.0.14
+    container_name: mongodb
+    restart: unless-stopped
+    networks:
+      - main-prod
+    ports:
+      - '27017:27017'
+    volumes:
+      - trfula-volume:/data/db
+
+networks:
+  main-prod:
+
+volumes:
+  trfula-volume:

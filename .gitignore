@@ -1,0 +1,7 @@
+/client/.env.production.local
+/client/.env.development.local
+/client/node_modules
+/client/build
+
+/server/.env
+/server/node_modules
