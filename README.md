@@ -19,6 +19,8 @@ Trufla root project.
 Then go to server folder and run `npm install && npm start`<br />
 and then go to client folder and run `npm install && npm start`
 
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
 ## Deployment
 
 1- `git clone https://github.com/heavenchains/trufla-coding-challenge.git` <br />
