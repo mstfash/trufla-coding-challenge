@@ -3,7 +3,7 @@ Trufla root project.
 ### Structure
 
 - `client` which is the react app
-- `server` which is the node js server with rest apis
+- `server` which is the nodejs server with rest apis
 - `docker-compose.yaml` to launch the whole project into containers
 - `makefile` helper to run terminal commands
 
