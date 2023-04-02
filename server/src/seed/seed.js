@@ -5,7 +5,6 @@ import Department from '../models/Department';
 import Product from '../models/Product';
 import Promotion from '../models/Promotion';
 import ProductPromotion from '../models/ProductPromotion';
-import { getDepartmentsRoutes } from '../routes/departments';
 
 const mongoConnector = new MongoConnector();
 

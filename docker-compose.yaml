@@ -35,10 +35,10 @@ services:
     ports:
       - '27017:27017'
     volumes:
-      - trfula-volume:/data/db
+      - trufla-volume:/data/db
 
 networks:
   main-prod:
 
 volumes:
-  trfula-volume:
+  trufla-volume:

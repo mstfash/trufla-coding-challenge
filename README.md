@@ -21,7 +21,7 @@ You must have mongodb installed and running, if not then deployment by docker wo
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Deployment
+## Docker Deployment
 
 1- `git clone https://github.com/heavenchains/trufla-coding-challenge.git` <br />
 2- `cd trufla-coding-challenge` <br />

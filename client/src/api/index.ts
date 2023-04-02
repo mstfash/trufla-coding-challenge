@@ -1,9 +1,11 @@
 import Axios from 'axios';
 import { Filters } from '../helper/interfaces';
+import { SERVER_URL } from '../helper/constants';
+
 
 Axios.interceptors.request.use(function (config: any) {
   if (config.url.startsWith('/')) {
-    config.url = process.env.REACT_APP_SERVER_URL + config.url;
+    config.url = SERVER_URL + config.url;
   }
   return config;
 });
@@ -29,7 +31,7 @@ const fetchProducts = ({
   });
 };
 
-export default {
-  fetchDepartments,
-  fetchProducts,
-};
+const api = {fetchDepartments,
+  fetchProducts,}
+
+export default api
